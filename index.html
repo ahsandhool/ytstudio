@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidra Chain Clone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f8fc;
+            color: #333;
+        }
+
+        header {
+            background-color: #1e90ff;
+            color: white;
+            padding: 1rem 2rem;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #1c7ed6;
+            padding: 0.5rem;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background-color: #d0ebff;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            color: #1c7ed6;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            margin: 2rem;
+        }
+
+        .feature {
+            background-color: #e7f5ff;
+            border: 1px solid #c0ebff;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            flex: 1;
+            margin: 0 1rem;
+        }
+
+        footer {
+            background-color: #1e90ff;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .form-container {
+            display: flex;
+            justify-content: center;
+            margin: 2rem;
+        }
+
+        .form-container form {
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .form-container form h2 {
+            margin-bottom: 1rem;
+            color: #1c7ed6;
+        }
+
+        .form-container form input {
+            width: 100%;
+            padding: 0.8rem;
+            margin: 0.5rem 0;
+            border: 1px solid #c0ebff;
+            border-radius: 4px;
+        }
+
+        .form-container form button {
+            background-color: #1c7ed6;
+            color: white;
+            border: none;
+            padding: 0.8rem;
+            width: 100%;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .form-container form button:hover {
+            background-color: #1864ab;
+        }
+
+        .transactions {
+            margin: 2rem;
+            padding: 1rem;
+            background-color: #e7f5ff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .transactions h2 {
+            color: #1c7ed6;
+            margin-bottom: 1rem;
+        }
+
+        .transactions table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .transactions table th, .transactions table td {
+            border: 1px solid #c0ebff;
+            padding: 0.8rem;
+            text-align: left;
+        }
+
+        .transactions table th {
+            background-color: #d0ebff;
+            color: #1c7ed6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sidra Chain Clone</h1>
+    </header>
+    
+    <nav>
+        <a href="#">Home</a>
+        <a href="#features">Features</a>
+        <a href="#login">Login</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="hero">
+        <h1>Welcome to Sidra Chain</h1>
+        <p>Your gateway to Shariah-compliant blockchain solutions.</p>
+        <button style="background-color: #1c7ed6; color: white; border: none; padding: 0.8rem 1.5rem; cursor: pointer; border-radius: 4px;">Get Started</button>
+    </section>
+
+    <section class="features" id="features">
+        <div class="feature">
+            <h2>Blockchain Explorer</h2>
+            <p>Track transactions and explore the blockchain with ease.</p>
+        </div>
+        <div class="feature">
+            <h2>Shariah Compliance</h2>
+            <p>Designed to align with Islamic financial principles.</p>
+        </div>
+        <div class="feature">
+            <h2>Wallet Integration</h2>
+            <p>Securely manage your tokens and perform swaps seamlessly.</p>
+        </div>
+    </section>
+
+    <section class="form-container" id="login">
+        <form>
+            <h2>Login</h2>
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <section class="transactions">
+        <h2>Recent Transactions</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2024-12-21</td>
+                    <td>100 Tokens</td>
+                    <td>Success</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>2024-12-20</td>
+                    <td>50 Tokens</td>
+                    <td>Pending</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sidra Chain Clone. All rights reserved.</p>
+    </footer>
+</body>
+</html>
